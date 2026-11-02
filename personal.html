@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="personal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal | Wendy Salcedo</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+
+    <!-- Header con Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Wendy<span>.Dev</span></a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">Acerca de mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Acerca de Mí -->
+        <section id="about" class="section about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h1>Hola, soy <span>Wendy Salcedo</span></h1>
+                    <h2>Economista</h2>
+                    <p>
+                        Apasionada por el análisis cuantitativo, el modelado financiero y el desarrollo web. 
+                        Combino el rigor de los datos con el diseño de experiencias digitales interactivas para crear 
+                        soluciones innovadoras e impactantes.
+                    </p>
+                    <a href="#contact" class="btn">Contáctame</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://www.bing.com/images/search?view=detailV2&ccid=xy37s%2b0q&id=5A5C479FF97178387F1AC5584F0A198FDE12B0BB&thid=OIP.xy37s-0qhuLI4QznKq2oGwHaD6&mediaurl=https%3a%2f%2fthumbs.dreamstime.com%2fb%2fimagen-de-la-red-iconos-ecol%c3%b3gicos-y-respetuosos-con-el-medio-ambiente-sobre-procesamiento-datos-entorno-redes-globales-concepto-314816922.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c72dfbb3ed2a86e2c8e10ce72aada81b%3frik%3du7AS3o8ZCk9YxQ%26pid%3dImgRaw%26r%3d0&exph=422&expw=800&q=datos+ecologicos&FORM=IRPRST&ck=C22051D2CC7076F32A5763C7F11D4B2C&selectedIndex=53&itb=0" alt="Foto de Wendy Salcedo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Mis Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <span>Modelado Financiero & Excel</span>
+                            <span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <span>Análisis de Datos</span>
+                            <span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="https://ecosferaatlas.net/wp-content/uploads/cientifico-datos-ecologicos-tableta.webp" alt="Proyecto EcoData">
+                        </div>
+                        <div class="project-content">
+                            <h3>EcoData Colombia</h3>
+                            <p>Aplicación web interactiva para la exploración y visualización de biodiversidad y rutas ecológicas.</p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <a href="#" class="http://127.0.0.1:5500/">Ver Proyecto &rarr;</a>
+                        </div>
+                    </article>
+
+                   
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Wendy Salcedo. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="personal.js"></script>
+    <script src="personal.js"></script>
+</body>
+
+</html>
